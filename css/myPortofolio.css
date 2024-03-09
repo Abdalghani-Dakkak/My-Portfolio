@@ -16,22 +16,22 @@ body {
 }
 
 /* for scroll */
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 2px;
   max-height: 50%;
   height: 50%;
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   border-radius: 50%;
   background-color: #fdfef9;
 }
 
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background-color: #000;
 }
 
-body::-webkit-scrollbar-button {
+::-webkit-scrollbar-button {
   display: none;
 }
 /* for scroll */
@@ -553,7 +553,7 @@ a {
 
 @media (max-width:650px) {
   #identification {
-    clip-path: path('M 700 0 C 650,50 550,200 630,150 S 500,350 600,350 S 500,450 600,470 S 800,700 600,690 S 900,500 0,650 L 0,0 Z M 0 700 C 300,640 600,570 480,700 L 130,1100 0,1100 Z');
+    display: none;
   }
 
   #blackhole {
