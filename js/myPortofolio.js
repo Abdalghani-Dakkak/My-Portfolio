@@ -32,14 +32,8 @@ function animation() {
     blackHole.style.cssText = "transform:scale(2.5)";
     blackHole.style.zIndex = "2";
 
-    if (document.body.clientWidth <= 650) {
-      identification.style.cssText =
-        "animation: animationPath650andless 2s linear .1s forwards, animationPath2 1s linear 2.1s forwards;";
-    } else {
-      identification.style.cssText =
-        "animation: animationPath 2s linear .1s forwards, animationPath2 1s linear 2.1s forwards;";
-    }
-
+    identification.style.cssText =
+      "animation: animationPath 2s linear .1s forwards, animationPath2 1s linear 2.1s forwards;";
     orbits.forEach((e) => {
       e.style.cssText =
         "animation-iteration-count: 0; border-color: transparent;";
@@ -70,7 +64,7 @@ function animation() {
           blackHole.style.zIndex = "2";
 
           setTimeout(() => {
-            location.href = "../me.html";
+            location.href = "/me.html";
           }, 4000);
         }, 500);
       }, 2500);
